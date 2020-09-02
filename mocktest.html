@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<title>ECETSOLUTIONS | Practice for Ecet Exam | Previous year papers | Attempt Mock test | Practice Test series</title>
+<!-- Favicons -->
+<link href="images/title-logo.JPG" rel="icon" type="images/icon">
+<link rel="stylesheet" href="css/mocktest.css">
+<link rel="stylesheet" href="css/instructions.css">
+<link rel="stylesheet" href="css/confirmation.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css"/>
+ <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script> 
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+<script src="datafile.json"></script>
+<script>
+	function preventBack(){window.history.forward();}
+    setTimeout("preventBack()", 0);
+    window.onunload=function(){null};
+</script>
+
+</head>
+<body style="background: #f1f1f1" oncontextmenu="return false">
+<section id="nav-bar">
+<nav class="navbar">
+<a class="navbar-brand" href="mocktest.html">Mock Test-1 (CME)</a>
+<b id="timer"><span id="hour">89</span> : <span id="minute">59</span></b>
+<div class="user">
+<label  class="username"></label>
+</div>
+</nav>
+</section>
+<!---------------instructions-------------->
+<section id="instructions">
+<div class="container">
+<p style="text-align: center;font-size:18px;margin-top:2%">Instructions</p><hr>
+<div class="row">
+<div class="col-md-6" style="height: 400px; overflow-x: auto">
+<p class="tot"><span class="gen">General Instructions: </span><br>
+1. Total duration of examination is 180 minutes.<br>
+2. The clock will be set at the server. The countdown timer in the top right corner of screen will display the remaining time available for you to complete the examination. When the timer reaches zero, the examination will end by itself. You will not be required to end or submit your examination.<br>
+3. The Question Palette displayed on the right side of screen will show the status of each question using one of the following symbols:<br></p>
+<p style="font-size: 14px;line-height:1.5;padding-left: 20px">
+<img src="images/indications/sliver.jpg">&nbsp;You have not visited the question yet.<br>
+<img src="images/indications/red.jpg">&nbsp;You have not answered the question.<br>
+<img src="images/indications/green.jpg">&nbsp;You have answered the question.<br>
+<img src="images/indications/violet.jpg">&nbsp;You have NOT answered the question, but have marked the question for review. This will NOT be considered for evaluation.<br>
+<img src="images/indications/blue.jpg">&nbsp;The question(s) "Answered and Marked for Review" will be considered for evaluation.
+The Marked for Review status for a question simply indicates that you would like to look at that question again.</p>
+<p class="tot"><span class="gen">Navigating to a Question:</span><br>
+4. To answer a question, do the following:<br></p>
+<p style="font-size: 14px;line-height:1.5;padding-left: 20px">
+a. Click on the question number in the Question Palette at the right of your screen to go to that numbered question directly. Note that using this option does NOT save your answer to the current question.<br>
+b. Click on Save & Next to save your answer for the current question and then go to the next question.<br>
+c. Click on Mark for Review & Next to save your answer for the current question, mark it for review, and then go to the next question
+</p>
+<p class="tot"><span class="gen">Answering a Question :</span><br>
+5. Procedure for answering a multiple choice type question:</p>
+<p style="font-size: 14px;line-height:1.5;padding-left: 20px">
+a. To select your answer, click on the button of one of the options<br>
+b. To deselect your chosen answer, click on the button of the chosen option again or click on the Clear Response button<br>
+c. To change your chosen answer, click on the button of another option<br>
+d. To save your answer, you MUST click on the Save & Next button<br>
+e. To mark the question for review, click on the Mark for Review & Next button.
+</p>
+<p class="tot"><span class="gen">Navigating through sections:</span><br>
+6. Sections in this question paper are displayed on the top bar of the screen. Questions in a section can be viewed by clicking on the section name. The section you are currently viewing is highlighted.<br>
+7. After clicking the Save & Next button on the last question for a section, you will automatically be taken to the first question of the next section.<br>
+8. You can shuffle between sections and questions anytime during the examination as per your convenience only during the time stipulated.<br>
+9. Candidate can view the corresponding section summary as part of the legend that appears in every section above the question palette.</p>
+</div>
+
+<div class="col-md-6" style="height: 400px; overflow-x: auto;width: auto">
+<div class="other"> 
+<p class="tot"><span class="gen">Other Important Instructions:</span><br>
+1. The Question Paper consists of objective type questions only.<br>
+2. There will be no negative marks for wrong answers.<br>
+3. To save your response, click on Save & Next after answering each question. Otherwise, your response will not be saved.<br>
+4. Do not forget to click on Save & Next after answering the last question before the countdown timer reaches zero.<br>
+5. The questions will be displayed on the screen one at a time in English language only.<br>
+6. Each question will have 4 options, out of which one will be the correct answer and the candidate has to select one option.<br>
+7.Details of the Question Paper:<br>
+</p>
+<table class="table table-striped">
+  <!--Table head-->
+  <thead>
+    <tr>
+      <th class="th-head">#</th>
+      <th class="th-head">Section Name</th>
+      <th class="th-head">No. of questions</th>
+      <th class="th-head">Marks</th>
+      <th class="th-head">Marks per Question</th>
+    </tr>
+  </thead>
+  <!--Table head-->
+
+  <!--Table body-->
+  <tbody>
+    <tr class="active">
+      <th scope="row" class="th-head">1</th>
+      <td class="td-list">Mathematics</td>
+      <td class="td-list">50</td>
+      <td class="td-list">50</td>
+      <td class="td-list">1</td>
+    </tr>
+    <tr class="active">
+      <th scope="row" class="th-head">2</th>
+      <td class="td-list">Physcis</td>
+      <td class="td-list">25</td>
+      <td class="td-list">25</td>
+      <td class="td-list">1</td>
+    </tr>
+    <tr class="active">
+      <th scope="row" class="th-head">3</th>
+      <td class="td-list">Chemistry</td>
+      <td class="td-list">25</td>
+      <td class="td-list">25</td>
+      <td class="td-list">1</td>
+    </tr>
+    <!-- <tr class="active">
+      <th scope="row" class="th-head">4</th>
+      <td class="td-list">Computer Science and Engineering</td>
+      <td class="td-list">100</td>
+      <td class="td-list">100</td>
+      <td class="td-list">1</td>
+    </tr>  -->
+  </tbody>
+  <!--Table body-->
+</table>
+</div>
+</div>  
+</div>
+</div>
+</section>
+<!------------footer2-------->
+<div class="footer2">
+<div class="container">
+<div class="row">
+ <input type="checkbox" class="tick-mark" id="icheck" name="icheck">
+ <label class="tick" for="icheck">I have read and understood the all instructions.<!--All computer hardware allotted to me are in proper working condition. I declare that Iam-not in possession of/not wearing/not carring any prohibited gadget like mobile phone,bluetooth devices etc./any prohibited material with me into the Examination Hall.I agree that in case of not adhering to the instructions, I shall be liable to be debarred from this Test and/or to disciplianry action, which may include ban from future Tests/Examinations--> </label>
+<button class="ready" onclick="begin()">Iam ready to begin</button> 
+</div>
+</div>
+</div>
+<!---------------mock test------------->
+<section id="mock" style="display:none">
+<div class="container">
+<div class="row">
+<div class="col-md-8">
+<div class="exam" id="qcard">
+<span class="x" id="num">Question X</span>
+<select class="select-sub" id="subindicator">
+  <option value="1">Maths</option>
+  <option value="2">Physics</option>
+  <option value="3">Chemistry</option>
+  <!-- <option value="4">Computer Science</option> -->
+</select>
+<div class="question">
+<img src="" class="queimg"/>
+<h2 id="qstn"></h2>
+</div>
+<div class="choice">
+<table>
+<tbody>
+<tr>
+<th>
+ <span class="checkmark">1</span>
+  <input type="radio"  name="radio" class="radioo" id="option1" value="1">
+</th>
+<td style="background: #f1f1f1;width:100%"><label class="choice-text" for="option1" id="op1"></label></td>
+</tr>
+<tr>
+<th>
+ <span class="checkmark">2</span>
+  <input type="radio"  name="radio" class="radioo" id="option2" value="2">
+</th>
+<td><label class="choice-text" id="op2" for="option2"></label></td>
+</tr>
+<tr>
+<th>
+ <span class="checkmark">3</span>
+  <input type="radio"  name="radio" class="radioo" id="option3" value="3">
+</th>
+<td style="background: #f1f1f1;width:100%"><label class="choice-text" id="op3" for="option3"></label></td>
+</tr>
+<tr>
+<th>
+ <span class="checkmark">4</span>
+  <input type="radio"  name="radio" class="radioo" id="option4" value="4">
+</th>
+<td><label class="choice-text" id="op4" for="option4"></label></td>
+</tr>
+</tbody>
+</table>
+</div>  
+</div> 
+ 
+</div>
+<div class="col-md-4">
+<div class="indication">
+<div class="row">
+<div class="col-md-12">
+<span class="dot1"></span>
+<label class="indi">Answered</label>
+<span class="dot2"></span>
+<label class="indi">Unanswered</label><br>
+<span class="dot3"></span>
+<label class="indi">Not visited</label>
+<span class="dot4"></span>
+<label class="indi">Marked for Review</label><br>
+<span class="dot5"></span>
+<label class="indi">Answered & Marked for Review</label>
+</div>
+</div>
+</div>
+<div class="numbers card" style="height:270px;overflow-x: auto">
+<h5 style="border-bottom:1px solid #c5c5c5;margin-left: -15px;">Question numbers</h5>
+<div class="row" style="">
+<table style="border: none;">
+<tbody>
+<script>
+	var n = 1;
+	while(n <= 100) {
+		document.write("<tr>");
+		for(j=1;(j<8 && n<=100);j++) {
+			document.write("<td><input type=\"button\" value=\""+n+"\" onclick=\"bindex('"+n+"')\" id=\"btn"+n+"\" class=\"numbering\"></td>");
+			n++;
+		}
+		document.write("</tr>");
+	}
+</script>
+</tbody>
+</table>  
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!---------footer------------->
+<div class="footer" style="display:none">
+<div class="container">
+<div class="row">
+<button class="reviewtest" onclick="review()">Review Question & save</button>
+<button class="save" onclick="previous()">Previous</button>  
+<button class="save" onclick="snext()">Save & Next</button>       
+<button class="submitest" onclick="subconfirm()" data-toggle="modal" data-target="#confirm">Submit Exam</button> 
+</div>
+</div>
+</div>
+
+<!-- confirmation Modal -->
+<section id="confirmation">
+<div class="container">
+<div class="row">
+<div class="modal fade" id="confirm" tabindex="-1" role="dialog" aria-labelledby="confirmTitle" aria-hidden="true">
+<div class="modal-dialog modal-dialog-centered  modal-lg" role="document">
+<div class="modal-content" style="border: 1px solid #2196f3;background: #f1f1f1;margin-top: -20%">
+<div class="modal-header" style="background: #2196f3;color: #fff">
+<h5>Exam Summary</h5>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div class="confirm">
+<table class="table table-striped">
+<thead>
+<tr>
+<th class="th-title">Section Name</th>
+<th class="th-title">No. of Question</th>
+<th class="th-title">Answered</th>
+<th class="th-title">Not Answered</th>
+<th class="th-title">Not visited</th>
+<th class="th-title">Marked for Review</th>
+<th class="th-title">Answered & Marked for Review</th>
+</tr>
+</thead>
+<tbody>
+<tr class="table-info">
+<td class="td-title">Mathematics</td>
+<td class="td-title">50</td>
+<td class="td-title" id="ansd">0</td>
+<td class="td-title" id="notansd">0</td>
+<td class="td-title" id="notvstd">0</td>
+<td class="td-title" id="marked">0</td>
+<td class="td-title" id="ansdmarked">0</td>
+
+</tr>
+</tbody>
+</table> 
+</div>
+</div>
+<div class="modal-footer">
+<div class="footer">
+<div class="container">
+<div class="row">
+<label class="yesno">Are you sure you wish to submit this group of questions for making ? You cannot revisit and edit your responses upon submission
+<button class="yes" onclick="submit()">Yes</button>
+<button class="no" data-dismiss="modal" aria-label="Close">No</button>
+</label>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-auth.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+<script src="js/firebase.js"></script>
+<script src="js/mocktest.js"></script>
+</body>
+</html>
